@@ -1,4 +1,6 @@
-Screen, UtilsScreen {
+
+
+Screen, UtilsScreen, ConfirmDelete {
     align: center middle;
 }
 
@@ -7,12 +9,14 @@ Screen, UtilsScreen {
     text-align: center;
 }
 
-Body, #menu-container {
+Body, #utils-container{
     width: 100%;
     height: 50%;
+    align: center middle;
 }
 
-Body Vertical, #menu-container {
+
+Body Vertical, #utils-container {
     align: center middle;
 }
 
@@ -20,12 +24,34 @@ Button:focus, Button:hover {
     text-style: bold;
 }
 
-#menu-container {
-    Button {
+#utils-container {
+    #download, #setup, #music, #back, #frame_toggle{
+    width: 30;
+    background: 0%;
+    border: round #9FE2BF;
+}
+#utils-container, #delete{
     width: 30;
     background: 0%;
     border: round lightcoral;
+    color: lightcoral;
 }
+}
+#delete-title {
+    align: center middle;
+}
+#delete-container {
+    align: center middle;
+    #yes {
+        width: 10;
+        background: 0%;
+        border: round lightcoral;
+    }
+    #no {
+        width: 10;
+        background: 0%;
+        border: round lightcoral;
+    }
 }
 
 #main-container {
@@ -35,3 +61,4 @@ Button:focus, Button:hover {
         border: round #9FE2BF;
     }
 }
+
